@@ -28,7 +28,8 @@ LIMIT    5;
 Finally, to get a more detailed historical view, I used a more advanced query with a Common Table Expression (CTE) and a window function. This allowed me to find the top 3 schools that produced the most players for each decade, showing how the landscape has shifted over time.
 
 ```sql
-WITH ds AS (SELECT   FLOOR(s.yearID / 10) * 10 AS decade, sd.name_full,                                         COUNT(DISTINCT s.playerID) AS num_players  
+WITH ds AS (SELECT   FLOOR(s.yearID / 10) * 10 AS decade, sd.name_full,
+                           COUNT(DISTINCT s.playerID) AS num_players  
             FROM     schools s LEFT JOIN school_details sd
                      ON s.schoolID = sd.schoolID
             GROUP BY decade, sd.name_full),
