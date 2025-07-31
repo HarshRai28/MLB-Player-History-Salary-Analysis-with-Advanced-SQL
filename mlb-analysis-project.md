@@ -1,18 +1,4 @@
-# MLB Data Analysis Project
-
-## About this project
-
-This project takes a deep dive into the history of Major League Baseball (MLB) using a rich dataset of player information. As a data analyst for MLB, I used advanced SQL queries in MySQL to explore decades of player statistics, from the colleges that produce the most professional players to the spending habits of teams on player salaries.
-
-The main questions I answered are:
-- Which schools are the "MLB factories"?
-- How much do teams really spend on their stars?
-- What does a player's journey through the league look like?
-- How do the physical attributes of players compare across different eras?
-
-This analysis reveals fascinating trends over time and across different teams, offering a unique, data-driven look at America's favorite pastime.
-
-## 1. Which Schools Are the "MLB Factories"?
+# 1. Which Schools Are the "MLB Factories"?
 
 To find out which schools have produced the most MLB players, I joined the schools & school_details tables and counted the number of players from each school. From there, I wanted to see how the role of college baseball has evolved. I first calculated the number of schools that produced MLB players for each decade.
 
@@ -59,7 +45,7 @@ ORDER BY decade DESC, row_num;
 
 **RESULTS:** This powerful query reveals which schools were dominant in different eras.
 
-## 2. How Much Do Teams Spend on Player Salaries?
+# 2. How Much Do Teams Spend on Player Salaries?
 
 The world of Major League Baseball is not just about home runs and strikeouts; it's also a big business where money plays a critical role. To understand the financial landscape of the league, I analyzed team salaries to see how spending habits differ and how they've changed over time.
 
@@ -123,7 +109,7 @@ WHERE rn = 1;
 
 **RESULTS:** This query reveals the "Billion-Dollar Club" and when each team joined it.
 
-## 3. What Does Each Player's Career Look Like?
+# 3. What Does Each Player's Career Look Like?
 
 Behind every player's stats is a unique career path, with its own beginning, end, and journey in between. To understand these individual stories, I analyzed player careers to measure their longevity, trace their team history, and identify those who showed exceptional loyalty to a single franchise.
 
@@ -175,7 +161,7 @@ WHERE   s.teamID = e.teamID
 
 **RESULTS:** This reveals the "one-club" players who became icons for their teams, demonstrating remarkable loyalty and consistency over a long period.
 
-## 4. How Do Player Attributes Compare?
+# 4. How Do Player Attributes Compare?
 
 Beyond their performance on the field, what makes MLB players unique are their physical attributes and personal details. In this final part of the analysis, I explored some interesting and fun facts about the players themselves, from shared birthdays to physical changes in athletes over the decades.
 
