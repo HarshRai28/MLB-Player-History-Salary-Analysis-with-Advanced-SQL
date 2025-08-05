@@ -12,7 +12,6 @@ The main questions I answered are:
 
 This analysis reveals fascinating trends over time and across different teams, offering a unique, data-driven look at America's favorite pastime.
 
-**RESULTS:** The results confirm a clear trend - players have, on average, become taller and heavier over time. The query shows the specific increase in inches and pounds from one decade to the next, illustrating the changing physique of the modern athlete.
 
 ## Key Insights and Conclusions
 
